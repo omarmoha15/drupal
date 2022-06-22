@@ -1,0 +1,28 @@
+<?php
+
+/**
+ *hook_block_info
+ *
+**/
+function complaint_block_info() {
+
+
+
+    $blocks['complaint'] = array(
+      'info' => t('complaint info'),
+    );
+    return $blocks;
+  }
+
+  function complaint_block_view($delta = '') {
+
+
+    $block = array();
+    switch ($delta) {
+      case 'complaint':
+        $block['subject'] = t('complaint');
+        $block['content'] = "Task";
+break;
+    }
+    return $block;
+  }

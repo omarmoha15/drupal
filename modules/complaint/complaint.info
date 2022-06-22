@@ -1,0 +1,8 @@
+name = "complaint"
+description = "Displays the logged in user name in a block"
+package = Custom
+type = module
+dependencies = - drupal:block
+core = "7.x"
+php = "5.2.4"
+version = "7.90"
